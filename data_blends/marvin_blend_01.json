@@ -1,0 +1,29 @@
+{
+  "epoch_size": 10000,
+  "streams": [
+    {
+      "remote": "s3://some_bucket/instructions_blend_04/some_qa_short_02",
+      "proportion": 0.5
+    },
+    {
+      "remote": "s3://some_bucket/instructions_blend_04/alpaca_4_only_qa_short_02",
+      "proportion": 0.1
+    },
+    {
+      "remote": "s3://some_bucket/instructions_blend_04/lima_only_qa_short_02",
+      "proportion": 0.1
+    },
+    {
+      "remote": "s3://some_bucket/instructions_blend_04/dolly_es_only_qa_short_02",
+      "proportion": 0.1
+    },
+    {
+      "remote": "s3://some_bucket/instructions_blend_04/oass_es_only_qa_short_02",
+      "proportion": 0.1
+    },
+    {
+      "remote": "s3://some_bucket/instructions_blend_04/oass_en_only_qa_short_02",
+      "proportion": 0.1
+    }
+  ]
+}

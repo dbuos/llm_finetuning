@@ -1,0 +1,10 @@
+wandb/
+data_tmp
+**/__pycache__
+raw_datasets
+data_tmp
+temp
+.env
+a.json
+alpaca_4.json
+notes.ipynb

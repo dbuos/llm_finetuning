@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling", "hatch-requirements-txt"]
+build-backend = "hatchling.build"
+
+[project]
+name = "marvin-finetune-recipes"
+version = "0.0.1"
+authors = [
+  { name="Daniel Bustamante Ospina", email="danibust@bancolombia.com.co" },
+]
+description = "Source and Scripts for fine tuning procedures for LLMs."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: Other/Proprietary License",
+]
+dynamic = ["dependencies"]
+
+
+[tool.hatch.build]
+exclude = [
+  "dist/*",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/marvin_recipes"]
+
+[tool.hatch.metadata.hooks.requirements_txt]
+files = ["requirements.txt"]
